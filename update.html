@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+ 
+ 
+ 
+{% block title %} Home {% endblock %}
+ 
+ 
+ 
+{% block body %}
+<div class="container">
+<form action='' method = "POST">
+<table class="table">
+
+
+    <!-- <tr>
+        <td>Roll_id</td>
+        <td><input type = "integer" name = "Roll_id" value="{{student.Roll_id}}" class="form-control" /></td>
+    </tr> -->
+
+    <tr>
+        <td>Name</td>
+        <td><input type = "text" name = "name" value="{{student.name}}" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td><input type = "text" name = "branch" class="form-control" value="{{student.branch}}" /></td>
+    </tr>
+
+    <tr>
+        <td>Batch</td>
+        <td><input type = "string" name = "batch" class="form-control" value="{{student.batch}}" /></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td><input type = "email" name = "email" class="form-control" value="{{student.email}}" /></td>
+    </tr>
+
+    <tr>
+        <td>DateofBirth</td>
+        <td><input type = "date" name = "dob" class="form-control" value="{{student.dob}}" /></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
+        </td>
+       
+    </tr>
+</table>
+  
+  </form>
+
+</div>
+{% endblock %}

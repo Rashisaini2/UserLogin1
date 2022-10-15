@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<h4>Roll_id</h4>
+<p>{{student.Roll_id}}</p><hr>
+<h4>Name</h4>
+<p>{{student.name}}</p><hr>
+<h4>Branch</h4>
+<p>{{student.branch}}</p><hr>
+<h4>Batch</h4>
+<p>{{student.batch}}</p><hr>
+<h4>Email</h4>
+<p>{{student.email}}</p><hr>
+<h4>DateofBirth</h4>
+<p>{{student.dob}}</p><hr>
+
+{% endblock %}
+<!-- <div class="container">
+    <table class="table">
+        <thead style="background-color: brown;color: aliceblue;">
+           <th>ID</th> -->
+           <!-- <th>Roll_id</th>
+           <th>Name</th>
+           <th>Branch</th>
+           <th>Batch</th>
+           <th>Email</th>
+           <th>DateofBirth</th>
+           <th>        </th>
+           
+       </thead>
+   
+      <tbody>
+       {% for student in students %}
+       <tr
+       {% if loop.index %2==0 %}
+       style="background-color: rgb(255, 217, 247);"
+       {% else %}
+       style="background-color: rgb(248, 169, 231);"
+       {% endif %}
+       >
+       <!-- <td>{{loop.index }}</td> -->
+       <!-- <td>{{student.Roll_id}}</td>
+       <td>{{student.name}}</td>
+       <td>{{student.branch}}</td>
+       <td>{{student.batch}}</td>
+       <td>{{student.email}}</td>
+       <td>{{student.dob}}</td> -->
+<!--        
+       {% endfor %}
+      </tbody>
+    </table>
+     
+   </div> --> -->
+
+

@@ -1,0 +1,242 @@
+from forms import RegistrationForm, LoginForm
+login_form = forms.LoginForm()
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      .box {
+              display: flex;
+              flex-wrap: wrap; /* Optional. only if you want the items to wrap */
+              justify-content: center; /* For horizontal alignment */
+              align-items: center; /* For vertical alignment */
+              
+            }
+
+      .label {
+              display: flex;
+              flex-wrap: wrap; /* Optional. only if you want the items to wrap */
+              justify-content: center; /* For horizontal alignment */
+              align-items: center; /* For vertical alignment */
+            }
+
+      </style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>  
+   
+    
+
+  </head>
+  <body>
+
+    
+      <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-half">
+                    
+                <form method="POST" action="">
+                  {{ login_form.hidden_tag() }}
+                  <div class="box">
+
+                    <div class="box"> 
+                      <div class="field">
+                      
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <!-- <input class="input" type="text" name="username" placeholder="Username"> -->
+                          {{ login_form.email(placeholder = "Email") }}
+                          <!-- <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span> -->
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    
+                    <div class="box">
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <!-- <input class="input" type="email" name="email" placeholder="email" > -->
+                          {{ register_form.email( placeholder = "Email") }}
+                          <!-- <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span> -->
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    <div class="box">
+                      <div class="field">
+                        <label class="label">Password</label>
+                        <p class="control has-icons-left">
+                          <!-- <input class="input" type="password" name="password" placeholder="Password" > -->
+                          {{ register_form.password( placeholder = "Password") }}
+                          <!-- <span class="icon is-small is-left"> 
+                            <i class="fas fa-lock"></i>
+                          </span> -->
+                        </p>
+                      </div>
+
+                    </div>  
+                      
+
+                    <div class="box">
+                        <div class="field">
+                          <label class="label">Confirm Password</label>
+                          <p class="control has-icons-left">
+                            
+                            
+                            <!-- <input class="input" type="password" name="Confirm password" placeholder="Confirm Password" > -->
+                            {{ login_form.password(placeholder = "Password") }}
+                            <!-- <span class="icon is-small is-left">
+                              <i class="fas fa-lock"></i>
+                            </span> -->
+                          </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+
+                      <div class="field">
+                      
+                        <p class="control">
+                          
+                          
+                            <button type="submit" class="button is-success" >
+                              Login
+                            </button>
+                          
+                        </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                    
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      
+  </body>
+ 
+</html>
+<form method="post">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="post_header" value="log out">
+  <input type="submit"  value="Logout">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
